@@ -1,0 +1,185 @@
+.contact {
+  background-image: url(../img/bg-contact.png);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 72px;
+
+  width: 100%;
+  @include sp {
+    height: 220px;
+    padding-left: 16px;
+    background-size: cover;
+  }
+  figure {
+    max-width: 496px;
+    @include sp {
+      max-width: 200px;
+    }
+  }
+}
+
+.footer-main {
+  padding: 72px 0 62px;
+  background: #333;
+  position: relative;
+  overflow: hidden;
+  @include sp {
+    padding: 48px 0 48px;
+  }
+  .footer-ttl {
+    p {
+      color: #fafafa;
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 36px;
+      letter-spacing: 0.04em;
+    }
+  }
+  .footer-link {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-bottom: 22px;
+    @include sp {
+      flex-direction: column;
+    }
+    .footer-logo {
+      max-width: 225px;
+    }
+    & > ul {
+      & > li {
+        margin-bottom: 16px;
+        color: #fafafa;
+        font-size: 16px;
+        letter-spacing: 0.04em;
+        font-weight: bold;
+        @include sp {
+          margin-bottom: 8px;
+        }
+        & > a {
+          position: relative;
+          color: #fafafa;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            transition: all 0.3s ease-in-out;
+            background: var(--g-color-white);
+            bottom: 0;
+            right: 0;
+            left: auto;
+            height: 1px;
+          }
+          &:hover {
+            &::after {
+              width: 100%;
+              left: 0;
+              right: auto;
+            }
+          }
+        }
+        ul {
+          li {
+            padding-left: 30px;
+            margin-top: 16px;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 5px;
+              height: 5px;
+              border-radius: 50%;
+              background: var(--g-color-white);
+              top: 50%;
+              left: 15px;
+              transform: translateY(-50%);
+            }
+            a {
+              position: relative;
+              color: #fafafa;
+              &::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                transition: all 0.3s ease-in-out;
+                background: var(--g-color-white);
+                bottom: 0;
+                right: 0;
+                left: auto;
+                height: 1px;
+              }
+              &:hover {
+                &::after {
+                  width: 100%;
+                  left: 0;
+                  right: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-direction: column;
+      a {
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 700;
+        width: 195px;
+      }
+      .wrap-contact {
+        background-color: #fafafa;
+        color: #333;
+      }
+      .wrap-line {
+        color: #fafafa;
+        background-color: #06c755;
+      }
+    }
+    .social-footer-ctns {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 24px;
+      padding-top: 16px;
+      a {
+        figure {
+          max-width: 24px;
+        }
+      }
+    }
+  }
+  .footer-copyright {
+    p {
+      color: var(--g-color-white);
+      text-align: center;
+      letter-spacing: 0.04em;
+      font-weight: 400;
+      margin-top: 19px;
+      font-size: 13px;
+    }
+  }
+  .footer-deco {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    img {
+      width: 500px;
+    }
+  }
+}
