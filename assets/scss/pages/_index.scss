@@ -749,7 +749,7 @@
         .slider-controll-btns {
           display: flex;
           align-items: center;
-          justify-content: start;
+          justify-content: end;
           padding-top: 40px;
           gap: 32px;
           padding-right: 260px;
@@ -757,6 +757,7 @@
             padding-top: 64px;
             gap: 24px;
             padding-right: 0;
+            justify-content: start;
           }
           .member-before-btn {
             width: 48px;

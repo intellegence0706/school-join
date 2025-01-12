@@ -104,6 +104,45 @@ $(document).ready(function() {
   });
 
 });
+$(document).ready(function() {
+  // Initialize the slider
+  $('.voice-slider-container').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+
+  // After the slide initializes and every time it changes
+  $('.voice-slider-container').on('init reInit afterChange', function(event, slick, currentSlide) {
+    // 'currentSlide' might be undefined on init/reInit, so we provide a fallback
+    var i = (currentSlide ? currentSlide : 0);
+
+    // First, add 'open' to all slides
+    slick.$slides.addClass('open');
+
+    // Then remove 'open' from the current slide
+    $(slick.$slides[i]).removeClass('open');
+  });
+
+  // Custom next button for Slick slider
+  $('.voice-after-btn').on('click', function(e) {
+    e.preventDefault();
+    $('.voice-slider-container').slick('slickNext');
+  });
+
+  // Custom previous button for Slick slider
+  $('.voice-before-btn').on('click', function(e) {
+    e.preventDefault();
+    $('.voice-slider-container').slick('slickPrev');
+  });
+
+  // Initialize the event trigger manually at setup to correct initial state
+  $('.voice-slider-container').slick('setPosition');
+});
+
+
 
 
 $(document).ready(function() {

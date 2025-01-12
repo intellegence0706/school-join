@@ -19,7 +19,7 @@ html {
   scroll-behavior: smooth;
 
   @include pc {
-    font-size: calc(1 / 1250 * 100vw);
+    font-size: calc(1 / 1280 * 100vw);
   }
   @include sp {
     font-size: calc(1 * 100vw / 390);

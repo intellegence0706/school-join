@@ -10,6 +10,9 @@
   padding-left: 72px;
 
   width: 100%;
+  @include pc {
+    background-size: cover;
+  }
   @include sp {
     height: 220px;
     padding-left: 16px;
@@ -131,6 +134,9 @@
       justify-content: center;
       gap: 16px;
       flex-direction: column;
+      @include sp {
+        padding-top: 24px;
+      }
       a {
         padding: 12px;
         display: flex;
