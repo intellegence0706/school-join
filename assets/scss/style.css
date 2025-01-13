@@ -597,31 +597,31 @@ html {
   transition-delay: 0s;
 }
 .js-io._delay._show:nth-of-type(2) {
-  transition-delay: 0.2s;
+  transition-delay: 0.12s;
 }
 .js-io._delay._show:nth-of-type(3) {
-  transition-delay: 0.4s;
+  transition-delay: 0.24s;
 }
 .js-io._delay._show:nth-of-type(4) {
-  transition-delay: 0.6s;
+  transition-delay: 0.36s;
 }
 .js-io._delay._show:nth-of-type(5) {
-  transition-delay: 0.8s;
+  transition-delay: 0.48s;
 }
 .js-io._delay._show:nth-of-type(6) {
-  transition-delay: 1s;
+  transition-delay: 0.6s;
 }
 .js-io._delay._show:nth-of-type(7) {
-  transition-delay: 1.2s;
+  transition-delay: 0.72s;
 }
 .js-io._delay._show:nth-of-type(8) {
-  transition-delay: 1.4s;
+  transition-delay: 0.84s;
 }
 .js-io._delay._show:nth-of-type(9) {
-  transition-delay: 1.6s;
+  transition-delay: 0.96s;
 }
 .js-io._delay._show:nth-of-type(10) {
-  transition-delay: 1.8s;
+  transition-delay: 1.08s;
 }
 
 ._blur {
@@ -2269,11 +2269,16 @@ body.is-loading .js-cursor {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  background-image: url(../img/bg-news.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: auto;
 }
 @media screen and (max-width: 769px) {
   #top .p-news .container {
     flex-direction: column;
     gap: 24px;
+    background-image: unset;
   }
 }
 #top .p-news .container .sec-ttl {

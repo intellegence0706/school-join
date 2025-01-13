@@ -932,6 +932,7 @@
     background-color: #fafafa;
     padding-top: 104px;
     padding-bottom: 104px;
+
     @include sp {
       padding-top: 64px;
       padding-bottom: 64px;
@@ -940,9 +941,14 @@
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
+      background-image: url(../img/bg-news.png);
+      background-repeat: no-repeat;
+      background-position: bottom left;
+      background-size: auto;
       @include sp {
         flex-direction: column;
         gap: 24px;
+        background-image: unset;
       }
       .sec-ttl {
         max-width: 310px;
