@@ -18,6 +18,12 @@ $breakpoint: (
   }
 }
 
+@mixin responsive($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
 :root {
   --g-padding-s: 36rem;
   --g-padding-m: 80px;

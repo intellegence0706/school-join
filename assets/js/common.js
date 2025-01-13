@@ -255,6 +255,30 @@ $(document).ready(function() {
 
 });
 
+$('.hambtn').click(function() {
+  if($(this).hasClass('open-menu')) {
+    $(this).removeClass('open-menu');
+    $('.header-menu-sp, .full-bg').removeClass('open-menu');
+  } else {
+    $(this).addClass('open-menu');
+    $('.header-menu-sp, .full-bg').addClass('open-menu');
+  }
+});
+
+$(function() {
+  $(".hamburger-menu-icon-wrap").click(function(){
+    $('.hamburger-menu-line').toggleClass('open'); 
+    if ($('.hamburger-menu-line').hasClass('open')) {
+      bodyFixedOn();
+      $('.header-search-wrap').toggleClass('hidden');
+    }
+    else {
+      bodyFixedOff();
+      $('.header-search-wrap').toggleClass('hidden');
+    }
+  });
+});
+
 $('.__question').click(function() {
   const $answer = $(this).parent('.__list-main').children('.__answer');
   const $icon = $(this).parents('.faq-item').children('.__item-collapse__mark');
