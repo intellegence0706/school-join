@@ -2724,12 +2724,12 @@ body.is-loading .js-cursor {
     font-size: 25px;
   }
 }
-#about .p-about .container figure {
+#about .p-about .container video {
   margin-top: 40px;
   width: 100%;
 }
 @media screen and (max-width: 769px) {
-  #about .p-about .container figure {
+  #about .p-about .container video {
     margin-top: 24px;
   }
 }
