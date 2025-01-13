@@ -1,0 +1,282 @@
+#contact {
+  margin-top: 96px;
+  overflow-x: hidden;
+  .fv {
+    background-image: url(../img/img-about-fv.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      @include sp {
+        padding-top: 64px;
+        padding-bottom: 64px;
+      }
+    }
+    .fv-txt {
+      padding-left: 40px;
+      border-left: 2px solid white;
+      @include sp {
+        padding-left: 24px;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 700;
+        color: #fafafa;
+        text-shadow: 0px 0px 8px #2e2c2a0d;
+
+        @include sp {
+          font-size: 16px;
+        }
+      }
+      h2 {
+        font-size: 61px;
+        font-weight: 700;
+        color: #fafafa;
+        text-shadow: 0px 0px 8px #2e2c2a0d;
+        line-height: 89px;
+        @include sp {
+          font-size: 36px;
+          line-height: 48px;
+        }
+      }
+    }
+  }
+  .p-contact {
+    padding-top: 104px;
+    padding-bottom: 104px;
+    background-color: #fafafa;
+    @include sp {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+    .container {
+      max-width: 960px;
+      .ctn {
+        font-size: 20px;
+        font-weight: 700;
+        color: #333333;
+        text-align: center;
+        @include sp {
+          font-size: 16px;
+        }
+      }
+      .__form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        flex-direction: column;
+        padding-top: 64px;
+        @include sp {
+          gap: 32px;
+        }
+        .__form-item {
+          width: 100%;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          @include sp {
+            flex-direction: column;
+            gap: 16px;
+          }
+          &.__reverse {
+            flex-direction: column !important;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+          }
+          .__form-type {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            .__isneed {
+              padding: 2px 8px;
+              color: white;
+              font-weight: 700;
+              border-radius: 4px;
+              font-size: 13px;
+              &.isnt {
+                border: 1px solid #333333;
+                color: #333333;
+              }
+              &.is {
+                background-color: #fe913f;
+              }
+            }
+            .__item-ttl {
+              font-size: 16px;
+              font-weight: 700;
+              color: #333333;
+            }
+          }
+          .__item-input {
+            max-width: 672px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 32px;
+            &.__reverse {
+              flex-direction: column !important;
+              justify-content: flex-start;
+              align-items: flex-start;
+              gap: 8px;
+            }
+            .star {
+              font-size: 13px;
+              color: #333333;
+              font-weight: 700;
+              opacity: 0.75;
+            }
+            input[type="text"] {
+              width: 100%;
+              font-size: 16px;
+              font-weight: 500;
+              padding: 16px 24px;
+              background: #fafafa;
+              border: 1px solid #fe913f;
+              border-radius: 8px;
+            }
+            textarea {
+              width: 100%;
+              font-size: 16px;
+              font-weight: 500;
+              padding: 16px 24px;
+              border-radius: 8px;
+              height: 240px;
+              border: 1px solid #fe913f;
+
+              @include sp {
+                height: 200px;
+              }
+            }
+            select {
+              width: 100%;
+              font-size: 16px;
+              font-weight: 500;
+              padding: 4px 16px;
+              border-radius: 8px;
+              border: 1px solid #fe913f;
+              color: #333333;
+              background-color: #fafafa;
+              option {
+                font-size: 16px;
+              }
+            }
+          }
+          .agree {
+            font-size: 16px;
+            font-weight: 500;
+            color: #333333;
+            padding-top: 24px;
+            text-align: center;
+            a {
+              text-decoration: underline;
+            }
+          }
+          /* Style for the container and label positioning */
+          .__agree {
+            display: block; /* Change to 'flex' if you want elements in line */
+            margin: 10px; /* Spacing around the label */
+          }
+
+          .custom-checkbox {
+            position: relative;
+            padding-left: 35px; /* Space for the custom checkbox */
+            cursor: pointer;
+            display: inline-block;
+            line-height: 20px; /* Adjust line height to vertically center text with the box */
+            font-size: 16px;
+          }
+
+          /* Hide the default checkbox */
+          .custom-checkbox input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+          }
+
+          /* Create a custom checkbox */
+          .checkmark {
+            position: absolute;
+            top: -2px;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee; /* Background of the checkbox */
+            border: 1px solid #dcdcdc; /* Border of the checkbox */
+            border-radius: 4px; /* Rounded corners for the checkbox */
+          }
+
+          /* On mouse-over, add a grey background color */
+          .custom-checkbox:hover input ~ .checkmark {
+            background-color: #ccc;
+          }
+
+          /* When the checkbox is checked, add a blue background */
+          .custom-checkbox input:checked ~ .checkmark {
+            background-color: #2196f3;
+          }
+
+          /* Create the checkmark/indicator (hidden when not checked) */
+          .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+
+          /* Show the checkmark when checked */
+          .custom-checkbox input:checked ~ .checkmark:after {
+            display: block;
+          }
+
+          /* Style the checkmark/indicator */
+          .custom-checkbox .checkmark:after {
+            left: 8px;
+            top: 3px;
+            width: 7px;
+            height: 14px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg);
+          }
+        }
+        .submit {
+          margin-top: 24px;
+          text-decoration: none;
+          color: #fafafa;
+          background-color: #fe913f;
+          padding: 12px 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+          font-size: 16px;
+          font-weight: 700;
+          transition: all 0.3s;
+          border: 2px solid #fe913f;
+          @include sp {
+            padding: 12px 24px;
+          }
+          &:hover {
+            gap: 24px;
+            background-color: white;
+            color: #fe913f;
+            svg {
+              g {
+                path {
+                  stroke: #fe913f;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

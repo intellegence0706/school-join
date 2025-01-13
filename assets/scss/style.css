@@ -5552,4 +5552,292 @@ body.is-loading .js-cursor {
   background-color: #fafafa;
   color: #333;
   border: 1px solid #333;
+}
+
+#contact {
+  margin-top: 96px;
+  overflow-x: hidden;
+}
+#contact .fv {
+  background-image: url(../img/img-about-fv.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contact .fv .container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media screen and (max-width: 769px) {
+  #contact .fv .container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+#contact .fv .fv-txt {
+  padding-left: 40px;
+  border-left: 2px solid white;
+}
+@media screen and (max-width: 769px) {
+  #contact .fv .fv-txt {
+    padding-left: 24px;
+  }
+}
+#contact .fv .fv-txt p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fafafa;
+  text-shadow: 0px 0px 8px rgba(46, 44, 42, 0.0509803922);
+}
+@media screen and (max-width: 769px) {
+  #contact .fv .fv-txt p {
+    font-size: 16px;
+  }
+}
+#contact .fv .fv-txt h2 {
+  font-size: 61px;
+  font-weight: 700;
+  color: #fafafa;
+  text-shadow: 0px 0px 8px rgba(46, 44, 42, 0.0509803922);
+  line-height: 89px;
+}
+@media screen and (max-width: 769px) {
+  #contact .fv .fv-txt h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+#contact .p-contact {
+  padding-top: 104px;
+  padding-bottom: 104px;
+  background-color: #fafafa;
+}
+@media screen and (max-width: 769px) {
+  #contact .p-contact {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+#contact .p-contact .container {
+  max-width: 960px;
+}
+#contact .p-contact .container .ctn {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333333;
+  text-align: center;
+}
+@media screen and (max-width: 769px) {
+  #contact .p-contact .container .ctn {
+    font-size: 16px;
+  }
+}
+#contact .p-contact .container .__form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-direction: column;
+  padding-top: 64px;
+}
+@media screen and (max-width: 769px) {
+  #contact .p-contact .container .__form {
+    gap: 32px;
+  }
+}
+#contact .p-contact .container .__form .__form-item {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  /* Style for the container and label positioning */
+  /* Hide the default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+@media screen and (max-width: 769px) {
+  #contact .p-contact .container .__form .__form-item {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+#contact .p-contact .container .__form .__form-item.__reverse {
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+#contact .p-contact .container .__form .__form-item .__form-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+#contact .p-contact .container .__form .__form-item .__form-type .__isneed {
+  padding: 2px 8px;
+  color: white;
+  font-weight: 700;
+  border-radius: 4px;
+  font-size: 13px;
+}
+#contact .p-contact .container .__form .__form-item .__form-type .__isneed.isnt {
+  border: 1px solid #333333;
+  color: #333333;
+}
+#contact .p-contact .container .__form .__form-item .__form-type .__isneed.is {
+  background-color: #fe913f;
+}
+#contact .p-contact .container .__form .__form-item .__form-type .__item-ttl {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333333;
+}
+#contact .p-contact .container .__form .__form-item .__item-input {
+  max-width: 672px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+#contact .p-contact .container .__form .__form-item .__item-input.__reverse {
+  flex-direction: column !important;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+#contact .p-contact .container .__form .__form-item .__item-input .star {
+  font-size: 13px;
+  color: #333333;
+  font-weight: 700;
+  opacity: 0.75;
+}
+#contact .p-contact .container .__form .__form-item .__item-input input[type=text] {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px 24px;
+  background: #fafafa;
+  border: 1px solid #fe913f;
+  border-radius: 8px;
+}
+#contact .p-contact .container .__form .__form-item .__item-input textarea {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px 24px;
+  border-radius: 8px;
+  height: 240px;
+  border: 1px solid #fe913f;
+}
+@media screen and (max-width: 769px) {
+  #contact .p-contact .container .__form .__form-item .__item-input textarea {
+    height: 200px;
+  }
+}
+#contact .p-contact .container .__form .__form-item .__item-input select {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 4px 16px;
+  border-radius: 8px;
+  border: 1px solid #fe913f;
+  color: #333333;
+  background-color: #fafafa;
+}
+#contact .p-contact .container .__form .__form-item .__item-input select option {
+  font-size: 16px;
+}
+#contact .p-contact .container .__form .__form-item .agree {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  padding-top: 24px;
+  text-align: center;
+}
+#contact .p-contact .container .__form .__form-item .agree a {
+  text-decoration: underline;
+}
+#contact .p-contact .container .__form .__form-item .__agree {
+  display: block; /* Change to 'flex' if you want elements in line */
+  margin: 10px; /* Spacing around the label */
+}
+#contact .p-contact .container .__form .__form-item .custom-checkbox {
+  position: relative;
+  padding-left: 35px; /* Space for the custom checkbox */
+  cursor: pointer;
+  display: inline-block;
+  line-height: 20px; /* Adjust line height to vertically center text with the box */
+  font-size: 16px;
+}
+#contact .p-contact .container .__form .__form-item .custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+#contact .p-contact .container .__form .__form-item .checkmark {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee; /* Background of the checkbox */
+  border: 1px solid #dcdcdc; /* Border of the checkbox */
+  border-radius: 4px; /* Rounded corners for the checkbox */
+}
+#contact .p-contact .container .__form .__form-item .custom-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+#contact .p-contact .container .__form .__form-item .custom-checkbox input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+#contact .p-contact .container .__form .__form-item .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+#contact .p-contact .container .__form .__form-item .custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+#contact .p-contact .container .__form .__form-item .custom-checkbox .checkmark:after {
+  left: 8px;
+  top: 3px;
+  width: 7px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+#contact .p-contact .container .__form .submit {
+  margin-top: 24px;
+  text-decoration: none;
+  color: #fafafa;
+  background-color: #fe913f;
+  padding: 12px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.3s;
+  border: 2px solid #fe913f;
+}
+@media screen and (max-width: 769px) {
+  #contact .p-contact .container .__form .submit {
+    padding: 12px 24px;
+  }
+}
+#contact .p-contact .container .__form .submit:hover {
+  gap: 24px;
+  background-color: white;
+  color: #fe913f;
+}
+#contact .p-contact .container .__form .submit:hover svg g path {
+  stroke: #fe913f;
 }/*# sourceMappingURL=style.css.map */
